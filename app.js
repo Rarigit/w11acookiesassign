@@ -9,9 +9,10 @@ function btcClicked(){
     } else {
         Cookies.set(`selection`, `Bitcoin`);
     }
+    location.href = `selection.html`;
 }
 
-//This is the function i made for clicking the second button on the lisr called "Ethereum"
+//This is the function i made for clicking the second button on the list called "Ethereum"
 function ethClicked(){
     let currentClicked = Cookies.get(`crypto`);
     if(currentClicked == `Ethereum`){
@@ -19,6 +20,7 @@ function ethClicked(){
     } else {
         Cookies.set(`selection`, `Ethereum`);
     }
+    location.href = `selection.html`;
 }
 
 //This is the function I made for clicking the third button on the list called "Cardano"
@@ -29,10 +31,11 @@ function carClicked(){
     } else {
         Cookies.set(`selection`, `Cardano`);
     }
+    location.href = `selection.html`;
 }
 
 //The logic i used was to equate both the cookie name & value to the else statement of my functions.
-//I did this by equation my variablename to a string which is logically false.
+//I did this by equating my variablename to a string which is logically false.
 // I also used the cookie.set function to overwrite to the cookie value and name that i specified within said function
 
 //The event listeners were just click only and targeted towards the button id's  
@@ -41,7 +44,6 @@ document.getElementById(`ethButton`).addEventListener(`click`, ethClicked);
 document.getElementById(`carButton`).addEventListener(`click`, carClicked);
 
 
-// location.href = `selection.html`;
 // let firstChoice = {
 //     name: `selection`,
 //     crypto: `Bitcoin`
