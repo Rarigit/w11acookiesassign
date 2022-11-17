@@ -1,4 +1,7 @@
-
+//This promps the user to make selction once they press a key on the keyboard utilizing the `keydown' event listener
+function pageStart(){
+    alert(`Make a selection`);
+}
 
 //This is the function I made for clicking the first button on the list called "Bitcoin"
 
@@ -38,23 +41,11 @@ function carClicked(){
 //I did this by equating my variablename to a string which is logically false.
 // I also used the cookie.set function to overwrite to the cookie value and name that i specified within said function
 
-//The event listeners were just click only and targeted towards the button id's  
+//The event listeners were just click only and targeted towards the button id's and a keydown
+document.body.addEventListener(`keydown`,pageStart);  
 document.getElementById(`bitButton`).addEventListener(`click`, btcClicked);
 document.getElementById(`ethButton`).addEventListener(`click`, ethClicked);
 document.getElementById(`carButton`).addEventListener(`click`, carClicked);
-
-
-// let firstChoice = {
-//     name: `selection`,
-//     crypto: `Bitcoin`
-// };
-
-// let first_choice_json = JSON.stringify(firstChoice);
-// Cookies.set(`first`, first_choice_json);
-
-// // let coin_json = Cookies.get(`coin`);
-// // let coin =  JSON.parse(coin_json);
-// // document.body.insertAdjacentHTML(`beforeend`, `<h1>WTF</h1>`);
 
 
 
