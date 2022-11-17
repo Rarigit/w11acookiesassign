@@ -2,7 +2,9 @@
 // I had to use the insertadjacentHTML function to add text before and after my element ID's
 //Also used text "PLACEHOLDER" to be able to click something for my function to be called
 // as well as to have a location point in which to insert my html onto the page   
-
+//Used if/else statement as a way to remove my h2 and h3 tags when my h1 tag was selected.
+// Utilized same logic for the other functions as well, just removed the h tags that were not being rendered by said function
+//Utilized the remove function that we learned in class too.
 function renderFirst(){
     if(1 === 1){
         let heading = document.getElementById(`unoHeader`);
@@ -14,6 +16,8 @@ function renderFirst(){
         removeThree.remove();
     } else {}
 }
+
+//Commented out these functions as I'm using them as an if/else statement within my functions.
 
 // function removeSecond(){
 //     let removeTwo = document.getElementById(`deuxHeader`);
@@ -38,6 +42,8 @@ function renderSecond() {
     } else {}
 }
 
+//Commented out these functions as I'm using them as an if/else statement within my functions.
+
 // function removeFirst(){
 //     let removeOne = document.getElementById(`unoHeader`);
 //     removeOne.remove();
@@ -60,6 +66,8 @@ function renderThird() {
     } else {}
 }
 
+//Commented out these functions as I'm using them as an if/else statement within my functions.
+
 // function removeFirst(){
 //     let removeOne = document.getElementById(`unoHeader`);
 //     removeOne.remove();
@@ -70,6 +78,8 @@ function renderThird() {
 //     removeTwo.remove();
 // }
 
+//Corresponded a variable name of my choosing to the element id on my html page then,
+//I just added a basic eventlistener `click' followed by my functions
 let firstH1 = document.getElementById(`unoHeader`);
 let secondH2 = document.getElementById(`deuxHeader`);
 let thirdH3 = document.getElementById(`troisHeader`);
